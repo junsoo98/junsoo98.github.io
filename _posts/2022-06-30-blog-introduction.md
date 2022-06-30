@@ -5,8 +5,6 @@ categories: [blog]
 tags: [blog]
 ---
 
-# Blog Introduction
-
 생물 & 화학정보학에 대해 공부하고 있는 학생입니다. 
 
 공부한 내용들을 정리하고 기록으로 남기고자 블로그를 개설합니다. 
@@ -20,7 +18,8 @@ tags: [blog]
 - 제약산업 뉴스 번역
 - 개인적 생각과 경험
 
------------------------
+**********************
+
 
 I'm a student studying bio & cheminformatics.
 
@@ -35,7 +34,8 @@ The following is what I will post here.
 - Translation of Some News in Drug Industry
 - Personal Thoughts or Experiences
 
---------------------------
+**********************
+
 
 私はバイオ＆ケモインフォマティックスを勉強している学生です。
 
