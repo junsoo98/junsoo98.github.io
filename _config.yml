@@ -1,5 +1,5 @@
 # Site settings
-title: Jekyll-Uno
+title: Bioinformatics
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
 url: 'http://joshgerdes.com/jekyll-uno'
 baseurl: '/jekyll-uno'
@@ -8,12 +8,9 @@ baseurl: '/jekyll-uno'
 # disable_landing_page: true
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Song Junsoo'
+  email: s7027123@gmail.com
+  github_username:  junsoo98
 
 defaults:
   -
