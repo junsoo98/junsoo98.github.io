@@ -20,7 +20,7 @@ tags: [blog]
 - 제약산업 뉴스 번역
 - 개인적 생각과 경험
 
-
+-----------------------
 
 I'm a student studying bio & cheminformatics.
 
@@ -35,7 +35,7 @@ The following is what I will post here.
 - Translation of Some News in Drug Industry
 - Personal Thoughts or Experiences
 
-
+--------------------------
 
 私はバイオ＆ケモインフォマティックスを勉強している学生です。
 
