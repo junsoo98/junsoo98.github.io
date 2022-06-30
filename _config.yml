@@ -1,8 +1,8 @@
 # Site settings
 title: Bioinformatics
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+description: 'This is for study history'
 url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno'
+#baseurl: '/jekyll-uno'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 # disable_landing_page: true
