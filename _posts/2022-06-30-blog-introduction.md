@@ -1,3 +1,10 @@
+---
+title:  "Blog Introdction"
+date:   2022-06-30 
+categories: [blog]
+tags: [blog]
+---
+
 # Blog Introduction
 
 생물 & 화학정보학에 대해 공부하고 있는 학생입니다. 
@@ -13,6 +20,8 @@
 - 제약산업 뉴스 번역
 - 개인적 생각과 경험
 
+
+
 I'm a student studying bio & cheminformatics.
 
 This blog is for summing up my studies and recording them.
@@ -25,6 +34,8 @@ The following is what I will post here.
 - Database
 - Translation of Some News in Drug Industry
 - Personal Thoughts or Experiences
+
+
 
 私はバイオ＆ケモインフォマティックスを勉強している学生です。
 
