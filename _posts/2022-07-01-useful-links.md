@@ -120,3 +120,13 @@ Bioinformatics를 위해 참고할 링크들을 소개한다.
 - TCGA
 
   [https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga)
+
+- UK10K
+
+  [https://www.uk10k.org/](https://www.uk10k.org/)
+  
+- GTEX
+
+  [https://gtexportal.org/home/](https://gtexportal.org/home/)
+  
+  
