@@ -25,9 +25,9 @@ Drug Discovery 단계에서 5000~10000가지의 후보물질이 Preclinical에�
 
 시간이 갈수록 과거에 비해 같은 비용으로 찾을 수 있는 신약의 수가 감소하고 있다.
 
-이는 R&D 효율이 과거에 비해 감소하고 있으며, 반도체 산업에서 흔히 말하는 Moore’s Law와 반대현상이라는 
+이는 R&D 효율이 과거에 비해 감소하고 있으며, 반도체 산업에서 흔히 말하는 Moore’s Law와 
 
-의미로 **Eroom’s Law**로 불린다. 
+반대현상이라는 의미로 **Eroom’s Law**로 불린다. 
 
 이와 같은 현상의 원인으로 다음과 같은 사항들이 제기되었다.
 
@@ -37,13 +37,13 @@ Drug Discovery 단계에서 5000~10000가지의 후보물질이 Preclinical에�
 - 관심 질병이 제한됨
 - 임상 과정의 문제
 
-하지만 딥러닝과 같은 AI를의 활용과 생물&화학정보학 기법들을 통한 Drug Discovery가 신약 개발 과정을 
+하지만 딥러닝과 같은 AI를의 활용과 생물&화학정보학 기법들을 통한 Drug Discovery가 
 
-단축시키고 개발 확률을 증가시키는 사례와 연구들이 등장하고 있다. 
+신약 개발 과정을 단축시키고 개발 확률을 증가시키는 사례와 연구들이 등장하고 있다. 
 
 특히 개발 과정 중 첫번째 단계인 **Drug Discovery** 단계에서 그 활용이 기대된다.
 
-해당 단계를 세분화하여 설명하고 각 단계에서 어떤 computational method가 도움이 되는지 알아본다. 
+해당 단계를 세분화하여 설명하고 각 단계에서 어떤 method가 활용 되는지 알아본다. 
 
  
 
@@ -61,9 +61,9 @@ computational method로 bioinformatics의 omics data 등을 이용하거나,
 
 cheminformatics의 **Reverse docking**, **Reverse QSAR**가 활용된다.
 
-Reverse docking의 dockingd은 원래 compound library에서 target과 binding을 잘하는 compound를 
+Reverse docking의 dockingd은 원래 compound library에서 target과 
 
-찾는 방식이라면(target → compound), 
+binding을 잘하는 compound를 찾는 방식이라면(target → compound), 
 
 reverse docking은 역으로 여러 개의 target 중 천연물 혹은 phenotype 스크리닝으로 발견된 화합물과 binding이 좋은 target을 찾는 것이다.(compound → target)
 
