@@ -1,4 +1,5 @@
 ---
+published: true
 title:  "[LAIDD] 신약 개발 속 informatics 활용"
 date:   2022-07-03
 categories: [bioinformatics]
