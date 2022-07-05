@@ -22,7 +22,9 @@ tags: [cheminformatics]
 또한 머신러닝과 data sciencef를 위해 많이 사용되는 numpy, pandas, sklearn과 같은
 
 다른 python package들과의 연계를 통해 분자나 화학반응을 prediction하는 모델 구축이 가능합니다.  
-#
+
+
+
 
 
 
@@ -38,7 +40,9 @@ import rdkit
 아나콘다 설치 후 jupyter notebook 환경에서 위 코드를 통해 RDKit을 설치, import가 가능합니다. 
 
 분자 구조 파일 형식에 대한 간단한 설명 이후 RDKit 함수로 넘어가도록 하겠습니다.  
-#  
+
+
+
 
 
 화학 언어는 분자 구조의 2D diagram을 사용합니다. 하지만 이는 컴퓨터가 인식하기 좋은 
@@ -54,7 +58,9 @@ import rdkit
     - Molfile
     - SDF  
   
-  #
+  
+  
+  
 
 
 **SMILES**는 알파벳과 특수문자들로 이루어진 스트링으로 분자구조를 표현합니다.
@@ -77,8 +83,10 @@ SMILES는 몇가지 단점이 있습니다.
 
 - 기업이 만든 것이기 때문에, 생성 알고리즘에 따라 조금씩 차이가 있습니다.
 - 2D, 3D 구조에 대한 좌표값을 포함하지 않습니다.  
+ 
+ 
+ 
   
-  #
 
 **InChI**는 기업 태생의 SMILES 대신 통합된 표준을 제시하기 위해 IUPAC이 만든 방식입니다.
 
@@ -91,7 +99,9 @@ SMILES의 단점을 커버하기 위해, 한 분자구조는 한 code만을 반�
 이 단점을 보완하기 위해, Hashing algorithm을 통해 InChI를 변환한 것이
 
 바로 **InChIKey** 입니다.  
-#
+
+
+
 
 
 
@@ -111,7 +121,9 @@ SMILES의 단점을 커버하기 위해, 한 분자구조는 한 code만을 반�
 - properties block: 이외 분자 특성 정보
 
 **SDFile**은 여러 개의 molfile을 연결하여 저장하는 형식입니다.  
-#
+
+
+
 
 
 이제 RDKit을 통해 분자를 표현해봅시다. 
@@ -137,7 +149,7 @@ mol object 실행 시, 분자 구조 이미지를 출력합니다.
 `MolToMolBlock` : mol object의 mol file 형식 table을 반환 
 
 `MolToSmiles` : mol object의 분자를 SMILES로 변환하여 반환   
-#
+
 
 
 ```python
@@ -159,7 +171,7 @@ ChEMBL: [https://www.ebi.ac.uk/chembl/](https://www.ebi.ac.uk/chembl/)
 하지만 주의할 점은 데이터베이스마다 각 원자에 수소를 생략하고 저장하는 경우가 있다는 점이다. 
 
 따라서 차후 정확한 분석을 위해 mol file에 수소를 붙여주는 작업이 필요하다.  
-#
+
 
 
 ```python
@@ -172,7 +184,7 @@ m = Chem.RemoveHs(m)
 `AddHs` : mol object에 수소를 붙여 반환
 
 `RemoveHs` : mol object에 붙은 수소를 떼서 반환  
-#
+
 
 
 ## fingerprint  표현
@@ -188,7 +200,9 @@ fingerprint는 분자들간 구조의 유사도를 빠르게 측정하기 위해
 2D diagram을 직접 비교하지 않고, 분자 구조의 특징을 뽑아내어 이를 통해 비교하는 것입니다. 
 
 대표적인 두 가지 fragment code, MACCS keys 와 ECFPs를 살펴보겠습니다.  
-#
+
+
+
 
 
 **MACCS**(molecular access system)는 166-bits로 이루어진 
@@ -200,7 +214,7 @@ fingerprint는 분자들간 구조의 유사도를 빠르게 측정하기 위해
 각 분자들간의 유사도를 빠르게 측정할 수 있다. 
 
 단점으로는 MACCS의 key들이 implementation에 따라 조금씩 다르다는 것이다.  
-#
+
 
 
 
@@ -222,7 +236,9 @@ fingerprint는 분자들간 구조의 유사도를 빠르게 측정하기 위해
 하지만 단점으로는 hashing을 사용하기 때문에 다른 identifier가 같은 bit에 담기는
 
 bit collision이 일어날 수 있다.  
-#
+
+
+
 
 
 
