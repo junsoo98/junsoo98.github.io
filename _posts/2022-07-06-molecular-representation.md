@@ -191,7 +191,7 @@ fingerprint는 분자들간 구조의 유사도를 빠르게 측정하기 위해
 #
 
 
-**MACCS(molecular access system)**는 166-bits로 이루어진 
+**MACCS**(molecular access system)는 166-bits로 이루어진 
 
 2D structure fingerprint이다. 분자 sub structure의 keys들을 통해 분자를 표현한다.
 
@@ -206,7 +206,7 @@ fingerprint는 분자들간 구조의 유사도를 빠르게 측정하기 위해
 
 
 
-**ECFP(Extended Connectivity FingerPrint)**는 ****앞서 언급한 Morgan algorithm과
+**ECFP**(Extended Connectivity FingerPrint)는 앞서 언급한 Morgan algorithm과
 
 비슷한 과정을 이용한다. 
 
@@ -228,7 +228,7 @@ bit collision이 일어날 수 있다.
 
 
 
-###RDKit을 통한 fingerprint 생성 
+### RDKit을 통한 fingerprint 생성 
 
 ```python
 from rdkit import DataStructs #rdkit fingerprint 생성 함수 포함 모듈 
