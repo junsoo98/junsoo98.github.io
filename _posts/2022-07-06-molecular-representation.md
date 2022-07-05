@@ -21,6 +21,8 @@ tags: [bioinformatics]
 
 다른 python package들과의 연계를 통해 분자나 화학반응을 prediction하는 모델 구축이 가능합니다. 
 
+
+
 이번 포스팅은 간단한 RDkit 함수들과 추가적인 공부 source를 다루도록 하겠습니다.
 
 ## RDKit을 통해 분자 구조 format 표현
@@ -34,6 +36,8 @@ import rdkit
 
 분자 구조 파일 형식에 대한 간단한 설명 이후 RDKit 함수로 넘어가도록 하겠습니다.
 
+
+
 화학 언어는 분자 구조의 2D diagram을 사용합니다. 하지만 이는 컴퓨터가 인식하기 좋은 
 
 표현 방식이 아닙니다. 따라서 이를 간단한 string이나 벡터 형식으로 변환하는 것이 좋습니다. 
@@ -46,6 +50,7 @@ import rdkit
 - Connection table method
     - Molfile
     - SDF
+
 
 **SMILES**는 알파벳과 특수문자들로 이루어진 스트링으로 분자구조를 표현합니다.
 
@@ -68,6 +73,8 @@ SMILES는 몇가지 단점이 있습니다.
 - 기업이 만든 것이기 때문에, 생성 알고리즘에 따라 조금씩 차이가 있습니다.
 - 2D, 3D 구조에 대한 좌표값을 포함하지 않습니다.
 
+
+
 **InChI**는 기업 태생의 SMILES 대신 통합된 표준을 제시하기 위해 IUPAC이 만든 방식입니다.
 
 SMILES의 단점을 커버하기 위해, 한 분자구조는 한 code만을 반환합니다. 
@@ -79,6 +86,8 @@ SMILES의 단점을 커버하기 위해, 한 분자구조는 한 code만을 반�
 이 단점을 보완하기 위해, Hashing algorithm을 통해 InChI를 변환한 것이
 
 바로 **InChIKey** 입니다. 
+
+
 
 지금까지 말한 것들은 Linear notation이라면, 이제 connection tables를 알아봅니다.
 
@@ -96,6 +105,8 @@ SMILES의 단점을 커버하기 위해, 한 분자구조는 한 code만을 반�
 - properties block: 이외 분자 특성 정보
 
 **SDFile**은 여러 개의 molfile을 연결하여 저장하는 형식입니다. 
+
+
 
 이제 RDKit을 통해 분자를 표현해봅시다. 
 
@@ -121,6 +132,8 @@ mol object 실행 시, 분자 구조 이미지를 출력합니다.
 
 `MolToSmiles` : mol object의 분자를 SMILES로 변환하여 반환 
 
+
+
 ```python
 suppl = Chem.SDMolSupplier('data/5ht3ligs.sdf') 
 #sdf 형식의 분자 파일 읽어오기 
@@ -141,6 +154,8 @@ ChEMBL: [https://www.ebi.ac.uk/chembl/](https://www.ebi.ac.uk/chembl/)
 
 따라서 차후 정확한 분석을 위해 mol file에 수소를 붙여주는 작업이 필요하다
 
+
+
 ```python
 m = Chem.AddHs(m)
 m = Chem.RemoveHs(m)
@@ -151,6 +166,7 @@ m = Chem.RemoveHs(m)
 `AddHs` : mol object에 수소를 붙여 반환
 
 `RemoveHs` : mol object에 붙은 수소를 떼서 반환 
+
 
 ## fingerprint  표현
 
@@ -166,6 +182,8 @@ fingerprint는 분자들간 구조의 유사도를 빠르게 측정하기 위해
 
 대표적인 두 가지 fragment code, MACCS keys 와 ECFPs를 살펴본다. 
 
+
+
 **MACCS(molecular access system)**는 166-bits로 이루어진 
 
 2D structure fingerprint이다. 분자 sub structure의 keys들을 통해 분자를 표현한다.
@@ -175,6 +193,8 @@ fingerprint는 분자들간 구조의 유사도를 빠르게 측정하기 위해
 각 분자들간의 유사도를 빠르게 측정할 수 있다. 
 
 단점으로는 MACCS의 key들이 implementation에 따라 조금씩 다르다는 것이다. 
+
+
 
 **ECFP(Extended Connectivity FingerPrint)**는 ****앞서 언급한 Morgan algorithm과
 
@@ -193,7 +213,9 @@ fingerprint는 분자들간 구조의 유사도를 빠르게 측정하기 위해
 
 bit collision이 일어날 수 있다.
 
-RDKit을 통한 fingerprint 생성 
+
+
+###RDKit을 통한 fingerprint 생성 
 
 ```python
 from rdkit import DataStructs #rdkit fingerprint 생성 함수 포함 모듈 
