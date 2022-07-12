@@ -1,4 +1,9 @@
-
+---
+title:  "Bioinformatics Python libraries: 생물정보학 파이썬 라이브러리 정리"
+date:   2022-07-13 
+categories: [bioinformatics]
+tags: [bioinformatics]
+---
 
 > This content is from “Bioinformatics with Python Cookbook
 
