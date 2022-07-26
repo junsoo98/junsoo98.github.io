@@ -64,7 +64,7 @@ Silent mutation은 앞선 두 mutation과 같이 point mutation이 일어납니�
 
 이유는 RNA redundancy 때문입니다.
 
-하나의 아미노산을 지정하는 codon은 한 개 이상입니다. 
+하나의 아미노산을 지정하는 codon은 한 개 이상입니다.   
 <br/>  
 
 
@@ -74,7 +74,7 @@ Silent mutation은 앞선 두 mutation과 같이 point mutation이 일어납니�
 
 결과적으로 번역되는 아미노산이 Serine임은 변하지 않습니다.
 
-이런 mutation을 Silent mutation이라 합니다. 
+이런 mutation을 Silent mutation이라 합니다.   
 <br/>
 
 
@@ -92,13 +92,13 @@ frame에 변화가 생기는 돌연변이가 Frame Shift mutation입니다.
 
 완전히 다른 단백질이 번역될 수 있기 때문에 심각한 유전질병을 일으킬 수 있습니다. 
 
-In-Frame mutation 또한 Indels로 인해 발생합니다. 
+In-Frame mutation 또한 Indels로 인해 발생합니다.   
 <br/>  
 
 
 하지만 Frame Shift와 달리 돌연변이 이후 sequence reading frame에 
 
-변화가 생기지 않는 돌연변이 입니다. 
+변화가 생기지 않는 돌연변이 입니다.   
 
 예를 들어 하나의 codon을 이루는 3개의 nucleotide가 한번에 deletion 될 경우,
 
@@ -106,7 +106,7 @@ In-Frame mutation 또한 Indels로 인해 발생합니다.
 
 이런 In-Frame mutation은 조건이 까다로운 만큼 흔치 않은 돌연변이임을 
 
-위 plot을 통해 확인할 수 있습니다. 
+위 plot을 통해 확인할 수 있습니다.   
 <br/>  
 
 
@@ -123,7 +123,7 @@ exon 19에서의 In-Frame mutation(E19del)이 지배적으로 나타납니다.
 
 합성되는 단백질의 아미노산 서열 변화로 인해 단백질 기능 변화를 유발합니다.
 
-이는 암을 비롯한 치명적인 유전 질환의 원인이 되기 때문에 주목할 필요가 있습니다.
+이는 암을 비롯한 치명적인 유전 질환의 원인이 되기 때문에 주목할 필요가 있습니다.  
 <br/>  
 
 
@@ -131,7 +131,7 @@ exon 19에서의 In-Frame mutation(E19del)이 지배적으로 나타납니다.
 
 아래 그림은 human cancer에서 가장 높은 빈도로 mutation 하는 oncogen 중 하나인
 
-PIK3CA의 유전자 위치 내 Missense mutation 빈도를 표현한 histogram입니다.  
+PIK3CA의 유전자 위치 내 Missense mutation 빈도를 표현한 histogram입니다.    
 
 
 ![pik3ca_position.jpeg](/images/post-images/pik3ca_position.jpeg)
