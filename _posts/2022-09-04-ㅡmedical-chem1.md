@@ -102,9 +102,7 @@ tags: [biology]
 - **pKa = -log Ka**
     - Ka = [H+][B-] / [HB]
     - **Henderson-Hasselbalch 식**
-    
- ![20220904-2](/images/post-images/20220904-2.png)
-
+    - ![20220904-2](/images/post-images/20220904-2.png)
     
     - 약물의 생체 내 분자 또는 이온으로 존재하는 비율을 알 수 있음
     - 확산을 통한 약물의 흡수에 영향을 미침
