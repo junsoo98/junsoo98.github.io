@@ -16,6 +16,11 @@ layout: default
   <section class="post">
     {{ content }}
 
+  </section>
+  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+</article>
+{% if page.comments != false %}{% include disqus.html %}{% endif %}
+
   <script src="https://utteranc.es/client.js"
     repo="junsoo98/junsoo98.github.io"
     issue-term="url"
@@ -23,8 +28,3 @@ layout: default
     crossorigin="anonymous"
     async>
   </script>
-
-  </section>
-  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
-</article>
-{% if page.comments != false %}{% include disqus.html %}{% endif %}
